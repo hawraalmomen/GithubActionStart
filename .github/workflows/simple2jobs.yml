@@ -1,0 +1,22 @@
+# I dette workflow vil vi køre 2 jobs. Det ene i Ubuntu og det andet på MacOs
+name: Shell Commands Python
+
+on: [push]
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Hej med dig"
+
+      - name: multi line script
+        run: |
+          node -v
+          npm -v
+          mvn -v
+      - name: Python command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
