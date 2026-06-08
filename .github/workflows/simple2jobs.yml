@@ -4,12 +4,11 @@ name: Shell Commands Python
 on: [push]
 
 jobs:
-  run-shell-commands:
+  run-shell-command:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
         run: echo "Hej med dig"
-
       - name: multi line script
         run: |
           node -v
