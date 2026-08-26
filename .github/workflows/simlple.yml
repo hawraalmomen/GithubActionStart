@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: enchome "Hej Verden!"
+        run: echo "Hej Verden!"
 
       - name: multiline script
         run: |
