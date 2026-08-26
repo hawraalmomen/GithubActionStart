@@ -10,6 +10,6 @@ jobs:
       - name: Simple JS Action
         uses: actions/hello-world-javascript-action@v1.1
         with:
-          who-to-greet: Hawra
+          who-to-greet: Hawraa
       - name: Log Greeting Time
         run: echo "${{steps.greet.outputs.time}}"
