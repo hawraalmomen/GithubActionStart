@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: echo "Hej med dig"
+        run: echo "Hej, godt at se dig igen"
       - name: multi line script
         run: |
           node -v
