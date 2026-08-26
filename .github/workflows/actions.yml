@@ -11,3 +11,5 @@ jobs:
         uses: actions/hello-world-javascript-action@v1.1
         with:
           who-to-greet: Hawra
+      - name: Log Greeting Time
+        run: echo "${{steps.greet.outputs.time}}"
