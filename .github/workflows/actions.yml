@@ -22,4 +22,4 @@ jobs:
         with:
           who-to-greet: Hawra
       - name: Log Greeting Time
-        run: echo "${{step.greet.outputs.time}}"
+        run: echo "${{ steps.greet.outputs.time }}"
